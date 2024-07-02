@@ -38,7 +38,7 @@ const Wrapper = () => {
     remoteVideo = useRef(null);
     const [audiostate, setAudio] = useState(false);
 
-    const socket = SocketIOClient('http://localhost:3500', {
+    const socket = SocketIOClient('https://socket.btechbd.xyz', {
         transports: ['websocket'],
         query: {
             callerId
