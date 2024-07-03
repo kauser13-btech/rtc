@@ -3,14 +3,14 @@ import SocketIOClient from 'socket.io-client';
 
 
 const turnServerConfig = {
-    urls: 'turn:54.169.238.198:3478', // Example TURN server URL
+    urls: 'turn:54.169.238.198:3478??transport=tcp', // Example TURN server URL
     username: 'nilove', // Your TURN server username
     credential: 'test123' // Your TURN server password
 };
-
+// stun:stun.l.google.com:19302
 const configuration = {
     iceServers: [
-        turnServerConfig
+        { urls: 'stun:stun.l.google.com:19302' },turnServerConfig
     ],
     iceCandidatePoolSize: 10,
 };
