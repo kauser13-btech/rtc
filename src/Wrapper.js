@@ -3,7 +3,7 @@ import SocketIOClient from 'socket.io-client';
 
 
 const turnServerConfig = {
-    urls: 'turn:54.169.238.198:3478??transport=tcp', // Example TURN server URL
+    urls: 'turn:54.169.238.198:3478?transport=tcp', // Example TURN server URL
     username: 'nilove', // Your TURN server username
     credential: 'test123' // Your TURN server password
 };
